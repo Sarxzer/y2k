@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Motherish';
+    src: url('../font/Motherish-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: 'Motherish', sans-serif;
+    background-color: #000;
+    background-image: url(../img/tile.png);
+    background-size: 40px;
+    background-repeat: repeat;
+    animation: bg 5s linear infinite;
+    color: bisque;
+    cursor: url(../cursor/Normal\ Select.cur) 0 0, auto;
+}
+
+textarea {
+    cursor: url(../cursor/Text\ Select.cur) 5 5, auto !important;
+}
+
+a, button {
+    cursor: url(../cursor/Link\ Select.cur) 5 5, auto !important;
+}
+
+@keyframes bg {
+    0% {
+        background-position: 0 0, 0 0;
+    }
+
+    100% {
+        background-position: -20px 20px, -20px -20px;
+    }
+}
